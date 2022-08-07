@@ -21,16 +21,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Inter:wght@100&family=Lato:ital,wght@1,900&family=Oswald&family=Passion+One&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url("bogdan-yukhymchuk-XmvuWRDimrg-unsplash.jpg");
+            background-image: url("https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym94aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
             height: 50cm;
             background-size: cover;
         }
-
+        li {
+            transition: all ease-in-out 0.13s ;
+        }
         .navb {
             position: sticky;
             top: 5px;
             background-color: rgba(76, 91, 125, 0.412);
-            height: 1cm;
+            height: 1cm;         
         }
 
         .navb ul {
@@ -40,12 +42,12 @@
         .navb li {
             float: left;
             list-style: none;
-            margin: 12px 13px;
+            margin: 10px 13px;
             font-family: 'Blaka', cursive;
             font-family: 'Lato', sans-serif;
             font-family: 'Oswald', sans-serif;
             font-family: 'Passion One';
-            font-style: italic;
+            font-style: italic;    
         }
 
         .navb li a {
@@ -58,7 +60,20 @@
             /* background-color: rgba(22, 21, 28, 0.715);
             background-size: 152%; */
             color: white;
-            font-size: x-large;
+            /* font-size: x-large; */
+            transform: scale(1.3);
+        }
+        #l1:hover{
+            transform: scale(1.3);
+        }
+        #l2:hover{
+            transform: scale(1.3);
+        }
+        #l3:hover{
+            transform: scale(1.3);
+        }
+        #l4:hover{
+            transform: scale(1.3);
         }
         .form-group input{
             display: block;
@@ -71,16 +86,17 @@
             margin: auto;
             margin-top: 5px;
             margin-bottom: 5px;
-            background-color: rgb(65, 74, 88);
+            background-color: rgba(65, 74, 88,0.5);
             font-family: 'Blaka', cursive;
 font-family: 'Inter', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Passion One', cursive;
 font-size: large;
+transition: all ease-in-out 0.13s;
         }
         .form-group input:hover{
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.562);
             color: rgb(18, 23, 27);
             font-family: 'Blaka', cursive;
 font-family: 'Inter', sans-serif;
@@ -88,6 +104,7 @@ font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Passion One', cursive;
 font-size: large;
+transform: scale(1.12);
         }
         .container{
             border: 4px solid white;
@@ -109,18 +126,21 @@ font-size: large;
             color: white;
             position: relative;
             left: 21cm;
-            bottom: 9px;
-            background-color: rgba(225, 233, 254, 0.17);
+            bottom: 7px;
+            background-color: rgba(75, 82, 99, 0.17);
             border: none;
             border-style: double;
             border-radius: 2px;
             height: 0.7cm;
             /* text-color: rgb(214, 226, 236); */
+            transition: all ease-in-out 0.13s;
         }
 
         #search:hover {
-            background-color: white;
+            background-color: rgba(247, 247, 247, 0.731);
             color: black;
+            border-radius: 5px;
+            transform: scale(1.12);
         }
 
         #h1 {
@@ -181,6 +201,10 @@ font-family: 'Passion One', cursive;
             font-style: italic;
             font-size: x-large;
             text-decoration: none;
+            transition: all ease-in-out 0.13s;
+        }
+        .btn:hover{
+            transform: scale(1.12);
         }
     </style>
 </head>
@@ -191,7 +215,7 @@ font-family: 'Passion One', cursive;
             <li id="l1"><a href="#">Home</a></li>
             <li id="l2"><a href="#">Discover</a></li>
             <li id="l3"><a href="#">Pricing</a></li>
-            <li id="l4"><a href="#">Contact us</a></li>
+            <li id="l4"><a href="#">Contact us</a></li>  
             <li><input id="search" placeholder="Look up"></li>
         </ul>
     </nav>
